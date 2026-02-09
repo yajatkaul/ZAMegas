@@ -1,0 +1,56 @@
+{
+  "timeline": [
+    {
+      "type": "add_holds",
+      "holds": ["effects"]
+    },
+    {
+      "type": "animation",
+      "animation": ["nihillight", "special"],
+      "delay": 0.57
+    },
+    {
+      "type": "entity_particles",
+      "effect": "cobblemon:dragon_spark",
+      "locators": ["special_attack"],
+      "delay": 0.63
+    },
+    {
+      "type": "entity_particles",
+      "effect": "cobblemon:nihillight_actor",
+      "locators": ["special_attack"],
+      "delay": 0.45
+    },
+    {
+      "type": "entity_particles",
+      "entityCondition": "q.entity.is_user == false && q.missed(q.entity.uuid) == false",
+      "effect": "cobblemon:nihillight_target",
+      "locators": ["special_attack"],
+      "delay": -0.3
+    },
+    {
+      "type": "pause",
+      "pause": 0.9
+    },
+    {
+      "type": "entity_particles",
+      "entityCondition": "q.entity.is_user == false && q.missed(q.entity.uuid) == false",
+      "effect": "cobblemon:impact_dragon",
+      "locators": ["target"]
+    },
+    {
+      "type": "pause",
+      "pause": 0.01
+    },
+    {
+      "type": "remove_holds",
+      "holds": ["effects"]
+    },
+    {
+      "type": "pause",
+      "pause": 1.8
+    }
+  ]
+}
+
+

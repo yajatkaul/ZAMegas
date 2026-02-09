@@ -1,0 +1,38 @@
+{
+  "target": "cobblemon:pyroar",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "pokedex": [
+        "cobblemon.species.pyroar-mega.desc"
+      ],
+      "abilities": [
+        "drought",
+        "drought",
+        "h:drought"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 86,
+        "attack": 88,
+        "defence": 92,
+        "special_attack": 129,
+        "special_defence": 86,
+        "speed": 126
+      },
+      "baseScale": 1.15,
+      "height": 15,
+      "weight": 933
+    }
+  ]
+}

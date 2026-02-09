@@ -1,0 +1,36 @@
+{
+  "target": "cobblemon:chesnaught",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "pokedex": [
+        "cobblemon.species.chesnaught-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "grassysurge",
+        "h:grassysurge"
+      ],
+      "baseStats": {
+        "hp": 88,
+        "attack": 137,
+        "defence": 172,
+        "special_attack": 74,
+        "special_defence": 115,
+        "speed": 44
+      },
+      "battleOnly": true,
+      "height": 16,
+      "weight": 900
+    }
+  ]
+}

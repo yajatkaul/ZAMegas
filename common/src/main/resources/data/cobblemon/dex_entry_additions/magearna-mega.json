@@ -1,0 +1,13 @@
+{
+  "entryId": "cobblemon:magearna",
+  "forms": [
+    {
+      "displayForm": "Mega",
+      "unlockForms": ["Mega"]
+    },
+    {
+      "displayForm": "MegaO",
+      "unlockForms": ["MegaO"]
+    }
+  ]
+}

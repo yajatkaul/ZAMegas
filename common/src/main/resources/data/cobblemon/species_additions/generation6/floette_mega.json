@@ -1,0 +1,103 @@
+{
+  "target": "cobblemon:floette",
+  "implemented": true,
+  "features": [
+    "mega_evolution",
+    "angemax"
+  ],
+  "forms": [
+    {
+      "name": "MegaE",
+      "pokedex": [
+        "cobblemon.species.floette-mega.desc"
+      ],
+      "abilities": [
+        "regenerator",
+        "h:regenerator"
+      ],
+      "labels": [
+        "flower-eternal",
+        "mega",
+        "gen6",
+        "mythical"
+      ],
+      "aspects": [
+        "mega",
+        "flower-eternal"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 74,
+        "attack": 85,
+        "defence": 87,
+        "special_attack": 155,
+        "special_defence": 148,
+        "speed": 102
+      },
+      "baseScale": 0.5,
+      "height": 2,
+      "weight": 1008
+    },
+    {
+      "name": "Ange",
+      "primaryType": "fairy",
+      "secondaryType": "grass",
+      "pokedex": [
+        "cobblemon.species.floette-ange.desc"
+      ],
+      "abilities": [
+        "regenerator",
+        "h:regenerator"
+      ],
+      "labels": [
+        "flower-eternal",
+        "gen6",
+        "mythical"
+      ],
+      "aspects": [
+        "angemax",
+        "flower-eternal"
+      ],
+      "battleOnly": false,
+      "baseStats": {
+        "hp": 230,
+        "attack": 155,
+        "defence": 155,
+        "special_attack": 210,
+        "special_defence": 165,
+        "speed": 5
+      },
+      "dynamaxBlocked": true,
+      "baseScale": 0.8,
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "canWalk": false
+          },
+          "fly": {
+            "canFly": false
+          },
+          "swim": {
+            "canSwim": false
+          }
+        }
+      },
+      "hitbox": {
+        "width": 10,
+        "height": 30,
+        "fixed": false
+      },
+      "height": 250,
+      "weight": 9997,
+      "drops": {
+        "amount": 64,
+        "entries": [
+          {
+            "item": "minecraft:amethyst_shard",
+            "percentage": 100
+          }
+        ]
+      }
+    }
+  ]
+}

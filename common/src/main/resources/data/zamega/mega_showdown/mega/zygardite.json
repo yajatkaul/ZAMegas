@@ -1,0 +1,15 @@
+{
+  "showdown_id": "zygardite",
+  "pokemons": ["Zygarde"],
+  "aspect_conditions": {
+    "apply": {
+      "aspect": {
+        "required_aspects": [["complete-percent"]]
+      },
+      "aspects": ["mega_evolution=mega"]
+    },
+    "revert": {
+      "aspects": ["mega_evolution=none"]
+    }
+  }
+}

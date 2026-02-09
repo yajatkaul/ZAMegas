@@ -1,0 +1,42 @@
+{
+  "target": "cobblemon:heatran",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "pokedex": [
+        "cobblemon.species.heatran-mega.desc"
+      ],
+      "abilities": [
+        "filter",
+        "h:filter"
+      ],
+      "labels": [
+        "gen4",
+        "legendary",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 91,
+        "attack": 120,
+        "defence": 106,
+        "special_attack": 175,
+        "special_defence": 141,
+        "speed": 67
+      },
+      "hitbox": {
+        "width": 4,
+        "height": 3,
+        "fixed": false
+      },
+      "height": 28,
+      "weight": 5700
+    }
+  ]
+}

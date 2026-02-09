@@ -1,0 +1,12 @@
+{
+  "showdown_id": "glimmoranite",
+  "pokemons": ["Glimmora"],
+  "aspect_conditions": {
+    "apply": {
+      "aspects": ["mega_evolution=mega"]
+    },
+    "revert": {
+      "aspects": ["mega_evolution=none"]
+    }
+  }
+}

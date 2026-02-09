@@ -1,0 +1,12 @@
+{
+  "type": "choice",
+  "keys": [
+    "angemax"
+  ],
+  "default": "none",
+  "choices": [
+    "angemax"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}"
+}

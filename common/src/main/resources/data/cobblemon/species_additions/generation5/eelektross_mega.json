@@ -1,0 +1,37 @@
+{
+  "target": "cobblemon:eelektross",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "pokedex": [
+        "cobblemon.species.eelektross-mega.desc"
+      ],
+      "abilities": [
+        "hadronengine",
+        "h:hadronengine"
+      ],
+      "labels": [
+        "gen5",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 85,
+        "attack": 145,
+        "defence": 80,
+        "special_attack": 135,
+        "special_defence": 90,
+        "speed": 80
+      },
+      "baseScale": 1.15,
+      "height": 30,
+      "weight": 1800
+    }
+  ]
+}

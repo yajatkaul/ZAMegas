@@ -1,0 +1,17 @@
+{
+  "entryId": "cobblemon:tatsugiri",
+  "forms": [
+    {
+      "displayForm": "Mega",
+      "unlockForms": ["Mega"]
+    },
+    {
+      "displayForm": "MegaS",
+      "unlockForms": ["MegaS"]
+    },
+    {
+      "displayForm": "MegaD",
+      "unlockForms": ["MegaD"]
+    }
+  ]
+}

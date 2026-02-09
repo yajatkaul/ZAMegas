@@ -1,0 +1,59 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MEGA SHOWDOWN LICENSE v2.1"
+
+[[mods]]
+modId = "zamega"
+version = "${version}"
+displayName = "zamega"
+authors = "Yajat, Navas"
+description = '''
+Adds All Megas from Pokemon Legends ZA into Cobblemon! (MSD Required)
+'''
+#logoFile = ""
+
+[[dependencies.zamega]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zamega]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zamega]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.zamega]]
+modId = "cobblemon"
+type = "required"
+versionRange = "[1.7.0, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.zamega]]
+modId = "mega_showdown"
+type = "required"
+versionRange = "[1.6.4+1.7+2.21.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.zamega]]
+modId = "accessories"
+type = "required"
+versionRange = "[1.1.0-beta.52+1.21.1, )"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "zamega.mixins.json"

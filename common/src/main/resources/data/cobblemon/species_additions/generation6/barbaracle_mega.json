@@ -1,0 +1,58 @@
+{
+  "target": "cobblemon:barbaracle",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "rock",
+      "secondaryType": "fighting",
+      "pokedex": [
+        "cobblemon.species.barbaracle-mega.desc"
+      ],
+      "abilities": [
+        "toughclaws",
+        "toughclaws",
+        "h:toughclaws"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 72,
+        "attack": 140,
+        "defence": 130,
+        "special_attack": 64,
+        "special_defence": 106,
+        "speed": 88
+      },
+      "baseScale": 1.15,
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "walkSpeed": 0.7
+          },
+          "swim": {
+            "swimSpeed": 0.7,
+            "canBreatheUnderwater": true,
+            "canSwimInWater": true,
+            "canSwimInLava": false
+          }
+        }
+      },
+      "hitbox": {
+        "width": 1.5,
+        "height": 4,
+        "fixed": false
+      },
+      "height": 22,
+      "weight": 1000
+    }
+  ]
+}

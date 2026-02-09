@@ -1,0 +1,42 @@
+{
+  "target": "cobblemon:dragonite",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "pokedex": [
+        "cobblemon.species.dragonite-mega.desc"
+      ],
+      "labels": [
+        "gen1",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "sheerforce",
+        "h:sheerforce"
+      ],
+      "baseStats": {
+        "hp": 91,
+        "attack": 124,
+        "defence": 115,
+        "special_attack": 145,
+        "special_defence": 125,
+        "speed": 100
+      },
+      "battleOnly": true,
+      "baseScale": 0.9,
+      "hitbox": {
+        "width": 2,
+        "height": 3.5,
+        "fixed": false
+      },
+      "height": 22,
+      "weight": 2900
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [" b ", "lel", " # "],
+  "key": {
+    "#": { "item": "minecraft:diamond" },
+    "b": { "item": "minecraft:nether_star" },
+    "l": { "item": "minecraft:netherite_ingot" },
+    "e": { "item": "mega_showdown:mega_stone" }
+  },
+  "result": {
+    "id": "zamega:zygardite",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "entryId": "cobblemon:dragalge",
+  "forms": [
+    {
+      "displayForm": "Mega",
+      "unlockForms": ["Mega"]
+    }
+  ]
+}

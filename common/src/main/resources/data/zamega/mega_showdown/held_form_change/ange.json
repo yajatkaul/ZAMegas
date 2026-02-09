@@ -1,0 +1,19 @@
+{
+  "aspect_conditions": {
+    "apply": {
+      "aspect": {
+        "required_aspects": [["flower-eternal"]]
+      },
+      "aspects": ["angemax=angemax"]
+    },
+    "revert": {
+      "aspect": {
+        "required_aspects": [["angemax"]]
+      },
+      "aspects": ["angemax=none"]
+    }
+  },
+  "pokemons": ["Floette"],
+  "effect": "mega_showdown:terapagos_effect",
+  "tradable": false
+}

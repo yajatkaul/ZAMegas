@@ -1,0 +1,9 @@
+{
+  "entryId": "cobblemon:staraptor",
+  "forms": [
+    {
+      "displayForm": "Mega",
+      "unlockForms": ["Mega"]
+    }
+  ]
+}

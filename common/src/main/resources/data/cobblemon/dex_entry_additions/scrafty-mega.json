@@ -1,0 +1,9 @@
+{
+  "entryId": "cobblemon:scrafty",
+  "forms": [
+    {
+      "displayForm": "Mega",
+      "unlockForms": ["Mega"]
+    }
+  ]
+}

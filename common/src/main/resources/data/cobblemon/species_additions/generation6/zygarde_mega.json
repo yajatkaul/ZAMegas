@@ -1,0 +1,45 @@
+{
+  "target": "cobblemon:zygarde",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "MegaC",
+      "pokedex": [
+        "cobblemon.species.zygarde-mega.desc"
+      ],
+      "abilities": [
+        "aurabreak",
+        "h:aurabreak"
+      ],
+      "labels": [
+        "MegaC",
+        "complete-percent",
+        "legendary",
+        "restricted"
+      ],
+      "aspects": [
+        "complete-percent",
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 216,
+        "attack": 70,
+        "defence": 91,
+        "special_attack": 216,
+        "special_defence": 85,
+        "speed": 100
+      },
+      "baseScale": 0.7,
+      "hitbox": {
+        "width": 3,
+        "height": 12,
+        "fixed": false
+      },
+      "height": 77,
+      "weight": 6100
+    }
+  ]
+}

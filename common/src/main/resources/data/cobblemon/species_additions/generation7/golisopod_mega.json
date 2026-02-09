@@ -1,0 +1,44 @@
+{
+  "target": "cobblemon:golisopod",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "bug",
+      "secondaryType": "steel",
+      "pokedex": [
+        "cobblemon.species.golisopod-mega.desc"
+      ],
+      "abilities": [
+        "heatproof",
+        "h:heatproof"
+      ],
+      "labels": [
+        "gen7",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 75,
+        "attack": 150,
+        "defence": 175,
+        "special_attack": 70,
+        "special_defence": 120,
+        "speed": 40
+      },
+      "baseScale": 1,
+      "hitbox": {
+        "width": 1.5,
+        "height": 4,
+        "fixed": false
+      },
+      "height": 23,
+      "weight": 1480
+    }
+  ]
+}

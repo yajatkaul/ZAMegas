@@ -1,0 +1,26 @@
+{
+  "target": "cobblemon:dragalge",
+  "implemented": true,
+  "features": ["mega_evolution"],
+  "forms": [
+    {
+      "name": "Mega",
+      "pokedex": ["cobblemon.species.dragalge-mega.desc"],
+      "abilities": ["regenerator", "regenerator", "h:regenerator"],
+      "labels": ["gen6", "mega"],
+      "aspects": ["mega"],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 65,
+        "attack": 85,
+        "defence": 105,
+        "special_attack": 132,
+        "special_defence": 163,
+        "speed": 44
+      },
+      "baseScale": 1.05,
+      "height": 21,
+      "weight": 1003
+    }
+  ]
+}

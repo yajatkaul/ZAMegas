@@ -1,0 +1,39 @@
+{
+  "target": "cobblemon:meganium",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "grass",
+      "secondaryType": "fairy",
+      "pokedex": [
+        "cobblemon.species.meganium-mega.desc"
+      ],
+      "abilities": [
+        "flowerveil",
+        "h:flowerveil"
+      ],
+      "labels": [
+        "gen2",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 80,
+        "attack": 92,
+        "defence": 115,
+        "special_attack": 143,
+        "special_defence": 115,
+        "speed": 80
+      },
+      "baseScale": 1.0,
+      "height": 24,
+      "weight": 2010
+    }
+  ]
+}

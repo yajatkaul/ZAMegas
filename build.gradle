@@ -1,0 +1,146 @@
+plugins {
+    id 'dev.architectury.loom' version '1.13-SNAPSHOT' apply false
+    id 'architectury-plugin' version '3.4-SNAPSHOT'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+    id 'org.jetbrains.kotlin.jvm' version '2.2.10'
+    id 'co.uzzu.dotenv.gradle'
+    id "me.modmuss50.mod-publish-plugin" version "1.1.0"
+}
+
+architectury {
+    minecraft = project.minecraft_version
+}
+
+allprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
+}
+
+subprojects {
+    apply plugin: 'dev.architectury.loom'
+    apply plugin: 'architectury-plugin'
+    apply plugin: 'maven-publish'
+    apply plugin: 'org.jetbrains.kotlin.jvm'
+
+    base {
+        // Set up a suffixed format for the mod jar names, e.g. `example-fabric`.
+        archivesName = "$rootProject.archives_name-$project.name"
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+        maven { url 'https://maven.impactdev.net/repository/development/' }
+        maven { url 'https://maven.neoforged.net/releases' }
+        maven { url 'https://thedarkcolour.github.io/KotlinForForge/' }
+
+        maven { url 'https://maven.wispforest.io/releases' }
+        maven { url 'https://maven.su5ed.dev/releases' }
+        maven { url 'https://maven.fabricmc.net' }
+        maven {
+            name = "Modrinth"
+            url = "https://api.modrinth.com/maven"
+        }
+    }
+
+    dependencies {
+        minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
+        mappings loom.officialMojangMappings()
+    }
+
+    java {
+        // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+        // if it is present.
+        // If you remove this line, sources will not be generated.
+        withSourcesJar()
+
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        it.options.release = 21
+    }
+
+    // Configure Maven publishing.
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                artifactId = base.archivesName.get()
+                from components.java
+            }
+        }
+
+        // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+        repositories {
+            // Add repositories to publish to here.
+            // Notice: This block does NOT have the same function as the block in the top level.
+            // The repositories here will be used for publishing your artifact, not for
+            // retrieving dependencies.
+        }
+    }
+}
+
+publishMods {
+    changelog = file("CHANGELOG.md").text
+    type = STABLE
+    dryRun = env.MODRINTH_TOKEN.value == null || env.CURSEFORGE_TOKEN.value == null
+
+    def cfOptions = curseforgeOptions {
+        accessToken = env.CURSEFORGE_TOKEN.value
+        projectId = project.curseforge_id
+        clientRequired = true
+        serverRequired = true
+        minecraftVersions.add("1.21.1")
+    }
+
+    def mrOptions = modrinthOptions {
+        accessToken = env.MODRINTH_TOKEN.value
+        projectId = project.modrinth_id
+        minecraftVersions.add("1.21.1")
+    }
+
+    curseforge("curseforgeFabric") {
+        from cfOptions
+        file project(":fabric")
+        modLoaders.add("fabric")
+        requires("fabric-api")
+        requires("cobblemon")
+        requires("accessories")
+        requires("architectury-api")
+        requires("owo-lib")
+        requires("cobblemon-mega-showdown")
+    }
+    modrinth("modrinthFabric") {
+        from mrOptions
+        file project(":fabric")
+        modLoaders.add("fabric")
+        requires("fabric-api")
+        requires("cobblemon")
+        requires("accessories")
+        requires("architectury-api")
+        requires("owo-lib")
+        requires("cobblemon-mega-showdown")
+    }
+
+    curseforge("curseforgeNeoForge") {
+        from cfOptions
+        file project(":neoforge")
+        modLoaders.add("neoforge")
+        requires("cobblemon")
+        requires("accessories")
+        requires("architectury-api")
+        requires("owo-lib")
+        requires("cobblemon-mega-showdown")
+    }
+    modrinth("modrinthNeoForge") {
+        from mrOptions
+        file project(":neoforge")
+        modLoaders.add("neoforge")
+        requires("cobblemon")
+        requires("accessories")
+        requires("architectury-api")
+        requires("owo-lib")
+        requires("cobblemon-mega-showdown")
+    }
+}

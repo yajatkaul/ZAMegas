@@ -1,0 +1,38 @@
+{
+  "target": "cobblemon:staraptor",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "fighting",
+      "secondaryType": "flying",
+      "pokedex": [
+        "cobblemon.species.staraptor-mega.desc"
+      ],
+      "abilities": [
+        "toughclaws",
+        "h:toughclaws"
+      ],
+      "labels": [
+        "gen4",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "battleOnly": true,
+      "baseStats": {
+        "hp": 85,
+        "attack": 140,
+        "defence": 100,
+        "special_attack": 60,
+        "special_defence": 90,
+        "speed": 110
+      },
+      "height": 19,
+      "weight": 500
+    }
+  ]
+}

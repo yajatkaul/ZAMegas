@@ -1,0 +1,12 @@
+{
+  "showdown_id": "absolitez",
+  "pokemons": ["Absol"],
+  "aspect_conditions": {
+    "apply": {
+      "aspects": ["mega_evolution=mega_z"]
+    },
+    "revert": {
+      "aspects": ["mega_evolution=none"]
+    }
+  }
+}

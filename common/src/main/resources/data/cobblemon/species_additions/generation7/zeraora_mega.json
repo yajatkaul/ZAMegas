@@ -1,0 +1,38 @@
+{
+  "target": "cobblemon:zeraora",
+  "features": [
+    "mega_evolution"
+  ],
+  "forms": [
+    {
+      "name": "Mega",
+      "pokedex": [
+        "cobblemon.species.zeraora-mega.desc"
+      ],
+      "labels": [
+        "gen7",
+        "mega",
+        "mythical"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "baseStats": {
+        "hp": 88,
+        "attack": 157,
+        "defence": 75,
+        "special_attack": 147,
+        "special_defence": 80,
+        "speed": 153
+      },
+      "battleOnly": true,
+      "hitbox": {
+        "width": 1.2,
+        "height": 3,
+        "fixed": false
+      },
+      "height": 15,
+      "weight": 445
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "zamega",
+  "version": "${version}",
+  "name": "zamega",
+  "description": "Adds All Megas from Pokemon Legends ZA into Cobblemon! (MSD Required)",
+  "authors": [
+    "Yajat, Navas"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yajatkaul"
+  },
+  "license": "MEGA SHOWDOWN LICENSE v2.1",
+  "icon": "assets/zamega/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.zamega.zamega.fabric.ZamegaFabric"
+    ],
+    "client": [
+      "org.zamega.zamega.fabric.client.ZamegaFabricClient"
+    ]
+  },
+  "mixins": [
+    "zamega.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*",
+    "cobblemon": ">=1.7",
+    "mega_showdown": ">=1.6.2+1.7+1.21.1",
+    "accessories": ">=1.1.0-beta.52+1.21.1"
+  }
+}

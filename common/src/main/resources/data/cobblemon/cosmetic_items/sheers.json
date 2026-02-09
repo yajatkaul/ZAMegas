@@ -1,0 +1,9 @@
+{
+  "pokemon": ["lucario"],
+  "cosmeticItems": [
+    {
+      "consumedItem": "minecraft:shears",
+      "aspects": ["cosmetic_item-shears"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "showdown_id": "chesnaughtite",
+  "pokemons": ["Chesnaught"],
+  "aspect_conditions": {
+    "apply": {
+      "aspects": ["mega_evolution=mega"]
+    },
+    "revert": {
+      "aspects": ["mega_evolution=none"]
+    }
+  }
+}
