@@ -5,8 +5,8 @@
   megaEvolves: "Zygarde-Complete",
   itemUser: ["Zygarde-Complete"],
   onTakeItem(item, source) {
-  	if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-  	return true;
+    if (item.megaEvolves.includes(source.baseSpecies.baseSpecies)) return false;
+    return true;
   },
   num: 2584,
   gen: 9,
