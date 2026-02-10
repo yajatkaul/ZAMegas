@@ -5,7 +5,7 @@
   megaEvolves: ["Raichu"],
   itemUser: ["Raichu"],
   onTakeItem(item, source) {
-    if (item.megaEvolves === source.baseSpecies.baseSpecies || source?.m?._raichuXPatched === true) return false;
+    if (item.megaEvolves.includes(source.baseSpecies.baseSpecies)) return false;
     return true;
   },
   num: -999,

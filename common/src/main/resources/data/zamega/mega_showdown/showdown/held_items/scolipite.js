@@ -5,7 +5,7 @@
   megaEvolves: ["Scolipede"],
   itemUser: ["Scolipede"],
   onTakeItem(item, source) {
-    if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+    if (item.megaEvolves.includes(source.baseSpecies.baseSpecies)) return false;
     return true;
   },
   num: -999,

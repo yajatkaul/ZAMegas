@@ -5,7 +5,12 @@
   megaEvolves: ["Floette-Eternal"],
   itemUser: ["Floette-Eternal"],
   onTakeItem(item, source) {
-    if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+    const immuneSpecies = [
+      "Floette-Eternal",
+      "Floette-MegaE",
+    ];
+    if (immuneSpecies.includes(source.species.name)) return false;
+    if (immuneSpecies.includes(source.baseSpecies.baseSpecies)) return false;
     return true;
   },
   num: -999,
