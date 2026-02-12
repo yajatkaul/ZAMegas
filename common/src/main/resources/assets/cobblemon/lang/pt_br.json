@@ -229,7 +229,7 @@
   "tooltip.zamega.malamarite.tooltip": "Permite que Malamar Megaevolua para Mega Malamar",
   "item.zamega.meowsticite": "Meowsticita",
   "tooltip.zamega.meowsticite.tooltip": "Permite que Meowstic Megaevolua para Mega Meowstic",
-  "item.zamega.pyroarite": "Pyraorita",
+  "item.zamega.pyroarite": "Pyroarita",
   "tooltip.zamega.pyroarite.tooltip": "Permite que Pyroar Megaevolua para Mega Pyroar",
   "item.zamega.raichunitex": "Raichunita X",
   "tooltip.zamega.raichunitex.tooltip": "Permite que Raichu Megaevolua para Mega Raichu X",
@@ -263,7 +263,7 @@
   "cobblemon.battle.cant.": "O %1$s oponente não pôde atacar, ele está imobilizado pelo amor",
   "cobblemon.battle.heal.eternalrage": "%1$s está extraindo energia",
   "cobblemon.battle.heal.eternalrageplus": "%1$s está extraindo energia",
-  "cobblemon.battle.damage.eternalrage": "o %1$s oponente está ficando mais fraco",
-  "cobblemon.battle.damage.eternalrageplus": "o %1$s oponente está ficando mais fraco",
+  "cobblemon.battle.damage.eternalrage": "O oponente %1$s está ficando mais fraco",
+  "cobblemon.battle.damage.eternalrageplus": "O oponente %1$s está ficando mais fraco",
   "cobblemon.battle.activate.retreat": "%1$s fugiu"
 }
