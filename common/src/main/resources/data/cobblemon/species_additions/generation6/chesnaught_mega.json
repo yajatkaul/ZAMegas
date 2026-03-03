@@ -1,25 +1,13 @@
 {
   "target": "cobblemon:chesnaught",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.chesnaught-mega.desc"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "abilities": [
-        "grassysurge",
-        "h:grassysurge"
-      ],
+      "pokedex": ["cobblemon.species.chesnaught-mega.desc"],
+      "labels": ["gen6", "mega"],
+      "aspects": ["mega"],
+      "abilities": ["bulletproof", "h:bulletproof"],
       "baseStats": {
         "hp": 88,
         "attack": 137,
@@ -29,6 +17,7 @@
         "speed": 44
       },
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "height": 16,
       "weight": 900
     }

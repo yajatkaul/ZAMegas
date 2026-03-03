@@ -1,27 +1,15 @@
 {
   "target": "cobblemon:scovillain",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.scovillain-mega.desc"
-      ],
-      "abilities": [
-        "contrary",
-        "contrary",
-        "h:contrary"
-      ],
-      "labels": [
-        "gen9",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
+      "pokedex": ["cobblemon.species.scovillain-mega.desc"],
+      "abilities": ["contrary", "contrary", "h:contrary"],
+      "labels": ["gen9", "mega"],
+      "aspects": ["mega"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 65,
         "attack": 138,

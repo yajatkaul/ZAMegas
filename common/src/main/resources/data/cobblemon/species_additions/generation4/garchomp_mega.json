@@ -1,26 +1,16 @@
 {
   "target": "cobblemon:garchomp",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega-Z",
       "primaryType": "dragon",
-      "pokedex": [
-        "cobblemon.species.garchomp-mega-z.desc"
-      ],
-      "labels": [
-        "gen4",
-        "mega_z"
-      ],
-      "aspects": [
-        "mega_z"
-      ],
-      "abilities": [
-        "roughskin",
-        "h:roughskin"
-      ],
+      "pokedex": ["cobblemon.species.garchomp-mega-z.desc"],
+      "labels": ["gen4", "mega_z"],
+      "aspects": ["mega_z"],
+      "abilities": ["roughskin", "h:roughskin"],
+      "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 108,
         "attack": 130,

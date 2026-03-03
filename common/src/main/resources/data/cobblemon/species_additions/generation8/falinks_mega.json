@@ -1,26 +1,15 @@
 {
   "target": "cobblemon:falinks",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.falinks-mega.desc"
-      ],
-      "abilities": [
-        "dauntlessshield",
-        "h:dauntlessshield"
-      ],
-      "labels": [
-        "gen8",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
+      "pokedex": ["cobblemon.species.falinks-mega.desc"],
+      "abilities": ["dauntlessshield", "h:dauntlessshield"],
+      "labels": ["gen8", "mega"],
+      "aspects": ["mega"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 65,
         "attack": 135,

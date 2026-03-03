@@ -1,27 +1,15 @@
 {
   "target": "cobblemon:starmie",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.starmie-mega.desc"
-      ],
-      "abilities": [
-        "purepower",
-        "purepower",
-        "h:purepower"
-      ],
-      "labels": [
-        "gen1",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
+      "pokedex": ["cobblemon.species.starmie-mega.desc"],
+      "abilities": ["purepower", "purepower", "h:purepower"],
+      "labels": ["gen1", "mega"],
+      "aspects": ["mega"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 60,
         "attack": 100,
