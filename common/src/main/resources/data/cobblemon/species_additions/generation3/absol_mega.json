@@ -1,28 +1,15 @@
 {
   "target": "cobblemon:absol",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega-Z",
       "primaryType": "dark",
       "secondaryType": "ghost",
-      "pokedex": [
-        "cobblemon.species.absol-mega-z.desc"
-      ],
-      "labels": [
-        "gen3",
-        "mega_z"
-      ],
-      "aspects": [
-        "mega_z"
-      ],
-      "abilities": [
-        "technician",
-        "technician",
-        "h:technician"
-      ],
+      "pokedex": ["cobblemon.species.absol-mega-z.desc"],
+      "labels": ["gen3", "mega_z"],
+      "aspects": ["mega_z"],
+      "abilities": ["technician", "technician", "h:technician"],
       "baseStats": {
         "hp": 65,
         "attack": 154,
@@ -32,6 +19,7 @@
         "speed": 151
       },
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "height": 12,
       "weight": 490
     }

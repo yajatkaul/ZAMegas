@@ -1,27 +1,15 @@
 {
   "target": "cobblemon:darkrai",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.darkrai-mega.desc"
-      ],
-      "abilities": [
-        "darkaura",
-        "h:darkaura"
-      ],
-      "labels": [
-        "gen4",
-        "legendary",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
+      "pokedex": ["cobblemon.species.darkrai-mega.desc"],
+      "abilities": ["darkaura", "h:darkaura"],
+      "labels": ["gen4", "legendary", "mega"],
+      "aspects": ["mega"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 70,
         "attack": 120,

@@ -1,27 +1,15 @@
 {
   "target": "cobblemon:scolipede",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.scolipede-mega.desc"
-      ],
-      "abilities": [
-        "tintedlens",
-        "tintedlens",
-        "h:tintedlens"
-      ],
-      "labels": [
-        "gen5",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
+      "pokedex": ["cobblemon.species.scolipede-mega.desc"],
+      "abilities": ["tintedlens", "tintedlens", "h:tintedlens"],
+      "labels": ["gen5", "mega"],
+      "aspects": ["mega"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 60,
         "attack": 140,

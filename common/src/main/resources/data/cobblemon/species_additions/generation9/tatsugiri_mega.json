@@ -1,27 +1,15 @@
 {
   "target": "cobblemon:tatsugiri",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.tatsugiri-curly-mega.desc"
-      ],
-      "abilities": [
-        "drizzle",
-        "h:drizzle"
-      ],
-      "labels": [
-        "gen9",
-        "mega"
-      ],
-      "aspects": [
-        "mega",
-        "tatsugiri-texture-curly"
-      ],
+      "pokedex": ["cobblemon.species.tatsugiri-curly-mega.desc"],
+      "abilities": ["drizzle", "h:drizzle"],
+      "labels": ["gen9", "mega"],
+      "aspects": ["mega", "tatsugiri-texture-curly"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 68,
         "attack": 65,
@@ -41,22 +29,12 @@
     },
     {
       "name": "MegaS",
-      "pokedex": [
-        "cobblemon.species.tatsugiri-stretchy-mega.desc"
-      ],
-      "abilities": [
-        "drizzle",
-        "h:drizzle"
-      ],
-      "labels": [
-        "gen9",
-        "mega"
-      ],
-      "aspects": [
-        "mega",
-        "tatsugiri-texture-stretchy"
-      ],
+      "pokedex": ["cobblemon.species.tatsugiri-stretchy-mega.desc"],
+      "abilities": ["drizzle", "h:drizzle"],
+      "labels": ["gen9", "mega"],
+      "aspects": ["mega", "tatsugiri-texture-stretchy"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 68,
         "attack": 65,
@@ -76,22 +54,12 @@
     },
     {
       "name": "MegaD",
-      "pokedex": [
-        "cobblemon.species.tatsugiri-droopy-mega.desc"
-      ],
-      "abilities": [
-        "drizzle",
-        "h:drizzle"
-      ],
-      "labels": [
-        "gen9",
-        "mega"
-      ],
-      "aspects": [
-        "mega",
-        "tatsugiri-texture-droopy"
-      ],
+      "pokedex": ["cobblemon.species.tatsugiri-droopy-mega.desc"],
+      "abilities": ["drizzle", "h:drizzle"],
+      "labels": ["gen9", "mega"],
+      "aspects": ["mega", "tatsugiri-texture-droopy"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 68,
         "attack": 65,

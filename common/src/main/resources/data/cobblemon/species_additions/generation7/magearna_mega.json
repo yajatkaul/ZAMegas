@@ -1,26 +1,15 @@
 {
   "target": "cobblemon:magearna",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.magearna-mega.desc"
-      ],
-      "abilities": [
-        "soulheart",
-        "h:soulheart"
-      ],
-      "labels": [
-        "mega",
-        "mythical"
-      ],
-      "aspects": [
-        "mega"
-      ],
+      "pokedex": ["cobblemon.species.magearna-mega.desc"],
+      "abilities": ["soulheart", "h:soulheart"],
+      "labels": ["mega", "mythical"],
+      "aspects": ["mega"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 80,
         "attack": 125,
@@ -38,22 +27,12 @@
     },
     {
       "name": "MegaO",
-      "pokedex": [
-        "cobblemon.species.magearna-megao.desc"
-      ],
-      "abilities": [
-        "soulheart",
-        "h:soulheart"
-      ],
-      "labels": [
-        "mega",
-        "mythical"
-      ],
-      "aspects": [
-        "mega",
-        "original-color"
-      ],
+      "pokedex": ["cobblemon.species.magearna-megao.desc"],
+      "abilities": ["soulheart", "h:soulheart"],
+      "labels": ["mega", "mythical"],
+      "aspects": ["mega", "original-color"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 80,
         "attack": 125,

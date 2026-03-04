@@ -1,27 +1,15 @@
 {
   "target": "cobblemon:heatran",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.heatran-mega.desc"
-      ],
-      "abilities": [
-        "filter",
-        "h:filter"
-      ],
-      "labels": [
-        "gen4",
-        "legendary",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
+      "pokedex": ["cobblemon.species.heatran-mega.desc"],
+      "abilities": ["filter", "h:filter"],
+      "labels": ["gen4", "legendary", "mega"],
+      "aspects": ["mega"],
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "baseStats": {
         "hp": 91,
         "attack": 120,

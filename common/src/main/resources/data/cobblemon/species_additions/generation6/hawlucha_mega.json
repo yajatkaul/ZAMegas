@@ -1,27 +1,15 @@
 {
   "target": "cobblemon:hawlucha",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
       "primaryType": "fighting",
       "secondaryType": "flying",
-      "pokedex": [
-        "cobblemon.species.hawlucha-mega.desc"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "abilities": [
-        "stamina",
-        "h:stamina"
-      ],
+      "pokedex": ["cobblemon.species.hawlucha-mega.desc"],
+      "labels": ["gen6", "mega"],
+      "aspects": ["mega"],
+      "abilities": ["stamina", "h:stamina"],
       "baseStats": {
         "hp": 78,
         "attack": 137,
@@ -36,6 +24,7 @@
         "fixed": false
       },
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "height": 10,
       "weight": 250
     }

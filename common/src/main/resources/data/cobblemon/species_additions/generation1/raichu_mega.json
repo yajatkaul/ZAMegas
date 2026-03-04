@@ -1,25 +1,13 @@
 {
   "target": "cobblemon:raichu",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega-X",
-      "pokedex": [
-        "cobblemon.species.raichu-mega-x.desc"
-      ],
-      "labels": [
-        "gen1",
-        "mega_x"
-      ],
-      "aspects": [
-        "mega_x"
-      ],
-      "abilities": [
-        "levitate",
-        "h:levitate"
-      ],
+      "pokedex": ["cobblemon.species.raichu-mega-x.desc"],
+      "labels": ["gen1", "mega_x"],
+      "aspects": ["mega_x"],
+      "abilities": ["levitate", "h:levitate"],
       "baseStats": {
         "hp": 60,
         "attack": 135,
@@ -29,25 +17,16 @@
         "speed": 110
       },
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "height": 12,
       "weight": 380
     },
     {
       "name": "Mega-Y",
-      "pokedex": [
-        "cobblemon.species.raichu-mega-y.desc"
-      ],
-      "labels": [
-        "gen1",
-        "mega_y"
-      ],
-      "aspects": [
-        "mega_y"
-      ],
-      "abilities": [
-        "transistor",
-        "h:transistor"
-      ],
+      "pokedex": ["cobblemon.species.raichu-mega-y.desc"],
+      "labels": ["gen1", "mega_y"],
+      "aspects": ["mega_y"],
+      "abilities": ["transistor", "h:transistor"],
       "baseStats": {
         "hp": 60,
         "attack": 100,
@@ -57,6 +36,7 @@
         "speed": 130
       },
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "height": 10,
       "weight": 260
     }

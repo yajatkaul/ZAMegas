@@ -1,25 +1,13 @@
 {
   "target": "cobblemon:delphox",
-  "features": [
-    "mega_evolution"
-  ],
+  "features": ["mega_evolution"],
   "forms": [
     {
       "name": "Mega",
-      "pokedex": [
-        "cobblemon.species.delphox-mega.desc"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "abilities": [
-        "levitate",
-        "h:levitate"
-      ],
+      "pokedex": ["cobblemon.species.delphox-mega.desc"],
+      "labels": ["gen6", "mega"],
+      "aspects": ["mega"],
+      "abilities": ["levitate", "h:levitate"],
       "baseStats": {
         "hp": 75,
         "attack": 69,
@@ -45,9 +33,7 @@
             "maxSize": "5"
           },
           "resting": {
-            "times": [
-              "day"
-            ],
+            "times": ["day"],
             "drowsyChance": 0.0033,
             "rouseChance": 0.0042
           },
@@ -60,6 +46,7 @@
         }
       },
       "battleOnly": true,
+      "dynamaxBlocked": true,
       "hitbox": {
         "width": 1.5,
         "height": 3.8,
