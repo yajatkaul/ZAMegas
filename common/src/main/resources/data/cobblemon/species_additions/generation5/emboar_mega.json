@@ -5,7 +5,7 @@
     {
       "name": "Mega",
       "pokedex": ["cobblemon.species.emboar-mega.desc"],
-      "abilities": ["supremeoverlord", "h:supremeoverlord"],
+      "abilities": ["moldbreaker", "h:moldbreaker"],
       "labels": ["gen5", "mega"],
       "aspects": ["mega"],
       "battleOnly": true,

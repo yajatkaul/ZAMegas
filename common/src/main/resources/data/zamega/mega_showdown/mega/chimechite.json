@@ -1,6 +1,6 @@
 {
-  "showdown_id": "meowsticite",
-  "pokemons": ["Meowstic", "Meowstic-F"],
+  "showdown_id": "chimechite",
+  "pokemons": ["Chimecho"],
   "aspect_conditions": {
     "apply": {
       "aspects": ["mega_evolution=mega"]

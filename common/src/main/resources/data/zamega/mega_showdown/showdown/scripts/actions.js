@@ -1,82 +1,47 @@
 {
-  runMegaEvo(pokemon) {
-    const speciesid = pokemon.canMegaEvo || pokemon.canUltraBurst;
-    if (!speciesid) return false;
+  canMegaEvo(p, a = p.side.hasMegaEvolved) {
+    if (a) return null;
+    const s = p.species, i = p.getItem(), b = this.battle, m = p.baseMoves.map(b.toID, b);
 
-    if (pokemon.ability === 'aurabreak') {
-      this.battle.add('-hint', 'Zygarde cannot Mega Evolve while it has Aura Break!');
-      return false;
-    }
+    if (s.baseSpecies === 'Rayquaza' && !p.terastallized && !i.zMove && m.includes('dragonascent')) return 'Rayquaza-Mega';
 
-    const isZygardeMega = speciesid === "Zygarde-MegaC";
+    const n = s.otherFormes?.find(f => /-Mega(-[a-zA-Z])?$/i.test(f)), g = n && this.dex.species.get(n),
+      ok = i.megaEvolves && (Array.isArray(i.megaEvolves) ? i.megaEvolves.includes(s.name) : i.megaEvolves === s.name);
 
-    if (isZygardeMega) {
-      const i = pokemon.moveSlots.findIndex(m => m.id === "coreenforcer");
-      if (i >= 0) {
-        const nihil = this.battle.dex.moves.get("nihillight");
-        for (const slots of [pokemon.moveSlots, pokemon.baseMoveSlots]) {
-          Object.assign(slots[i], {
-            id: nihil.id,
-            move: nihil.name,
-            pp: nihil.pp,
-            maxpp: nihil.pp,
-            used: false,
-          });
+    if (g?.requiredMove && m.includes(b.toID(g.requiredMove)) && !i.zMove && (s.name === s.baseSpecies || ok)) return g.name;
+
+    return typeof i.megaStone === 'string'
+      ? ok && i.megaStone !== s.name && i.megaStone
+      : typeof i.megaStone === 'object'
+        ? i.megaStone[s.name] && i.megaStone[s.name] !== s.name && i.megaStone[s.name]
+        : null;
+  },
+
+  runMegaEvo(p) {
+    const id = p.canMegaEvo || p.canUltraBurst;
+    if (!id) return false;
+
+    p.formeChange(id, p.getItem(), true);
+
+    if (p.species.id.includes('zygarde') && p.species.id.includes('meg')) {
+      const b = this.battle, o = b.toID('Core Enforcer'), n = b.toID('Nihillight'), mv = this.dex.moves.get(n);
+      if (mv.exists) {
+        let r;
+        for (const s of p.baseMoveSlots.concat(p.moveSlots))
+          s.id === o && (s.id = n, s.move = mv.name, s.target = mv.target, r = 1);
+
+        if (r) {
+          const am = this.dex.getActiveMove(n);
+          for (const a of b.queue.list)
+            a?.choice === 'move' && a.pokemon === p && (a.moveid === o || a.move?.id === o) && (a.moveid = n, a.move = am);
         }
       }
     }
-    pokemon.formeChange(speciesid, pokemon.getItem(), true);
-    const wasMega = pokemon.canMegaEvo;
-    for (const ally of pokemon.side.pokemon) {
-      if (wasMega) ally.canMegaEvo = null;
-      else ally.canUltraBurst = null;
-    }
-    this.battle.runEvent("AfterMega", pokemon);
-    return true;
-  },
 
-  canMegaEvo(pokemon) {
-    const species = pokemon.species;
-    if (pokemon.ability === 'aurabreak' && pokemon.terastallized) return null;
-    const item = pokemon.getItem();
-    if (item.id === "meowsticite") {
-      if (species.name === "Meowstic-F") {
-        return "Meowstic-F-Mega";
-      }
-      if (species.name === "Meowstic") {
-        return "Meowstic-Mega";
-      }
-    }
-    if (
-      species.baseSpecies === "Rayquaza" &&
-      (pokemon.terastallized || item.zMove)
-    ) {
-      return null;
-    }
-    if (
-      species.baseSpecies === "Rayquaza" &&
-      pokemon.baseMoves.includes("dragonascent")
-    ) {
-      return "Rayquaza-Mega";
-    }
-    const megaKey = species.otherFormes?.find(form =>
-      /.*-Mega(-[a-zA-Z])?/.test(form)
-    );
-    const megaForme = megaKey && this.dex.species.get(megaKey);
-    if (
-      (this.battle.gen <= 7 || this.battle.ruleTable.has("+pokemontag:past")) &&
-      megaForme?.requiredMove &&
-      pokemon.baseMoves.includes(megaForme.requiredMove.toLowerCase()) &&
-      !item.zMove
-    ) {
-      return megaForme.name;
-    }
-    if (
-      item.megaEvolves?.includes(species.name) &&
-      item.megaStone !== species.name
-    ) {
-      return item.megaStone;
-    }
-    return null;
-  }
+    const m = p.canMegaEvo;
+    p.side.hasMegaEvolved == true;
+    for (const a of p.side.pokemon) m ? a.canMegaEvo = null : a.canUltraBurst = null;
+
+    return this.battle.runEvent("AfterMega", p), true;
+  },
 }
