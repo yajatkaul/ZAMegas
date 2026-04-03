@@ -7,7 +7,7 @@
       "primaryType": "grass",
       "secondaryType": "fairy",
       "pokedex": ["cobblemon.species.meganium-mega.desc"],
-      "abilities": ["flowerveil", "h:flowerveil"],
+      "abilities": ["megasol", "h:megasol"],
       "labels": ["gen2", "mega"],
       "aspects": ["mega"],
       "battleOnly": true,

@@ -7,7 +7,7 @@
       "pokedex": ["cobblemon.species.dragonite-mega.desc"],
       "labels": ["gen1", "mega"],
       "aspects": ["mega"],
-      "abilities": ["sheerforce", "h:sheerforce"],
+      "abilities": ["multiscale", "h:multiscale"],
       "baseStats": {
         "hp": 91,
         "attack": 124,

@@ -3,10 +3,10 @@
   "features": ["mega_evolution"],
   "forms": [
     {
-      "name": "MegaC",
+      "name": "Mega",
       "pokedex": ["cobblemon.species.zygarde-mega.desc"],
       "abilities": ["aurabreak", "h:aurabreak"],
-      "labels": ["MegaC", "complete-percent", "legendary", "restricted"],
+      "labels": ["Mega", "complete-percent", "legendary", "restricted"],
       "aspects": ["complete-percent", "mega"],
       "battleOnly": true,
       "dynamaxBlocked": true,

@@ -7,7 +7,7 @@
       "primaryType": "water",
       "secondaryType": "dragon",
       "pokedex": ["cobblemon.species.feraligatr-mega.desc"],
-      "abilities": ["dragonsmaw", "h:dragonsmaw"],
+      "abilities": ["dragonize", "h:dragonize"],
       "labels": ["gen2", "mega"],
       "aspects": ["mega"],
       "battleOnly": true,

@@ -9,40 +9,20 @@
   pp: 10,
   priority: 0,
   flags: { protect: 1, mirror: 1, metronome: 1 },
-
-  onBeforeMove(attacker, defender, move) {
-    if (
-      attacker.baseSpecies?.baseSpecies === "Zygarde" &&
-      attacker.species?.isMega &&
-      attacker.getItem()?.id === "zygardite"
-    ) {
-      const nihil = this.dex.moves.get("nihillight");
-      if (nihil?.exists) {
-        const alreadyNihil = attacker.moveSlots.some(
-          (m) => this.dex.toID(m.move) === "nihillight"
-        );
-        if (!alreadyNihil) {
-          const coreIndex = attacker.moveSlots.findIndex(
-            (m) => this.dex.toID(m.move) === "coreenforcer"
-          );
-          if (coreIndex !== -1) {
-            attacker.moveSlots[coreIndex].move = nihil.name;
-            attacker.moveSlots[coreIndex].id = nihil.id;
-            attacker.moveSlots[coreIndex].pp = nihil.pp;
-            attacker.moveSlots[coreIndex].maxpp = nihil.pp;
-            attacker.baseMoves[coreIndex] = nihil.id;
-
-            move.basePower = nihil.basePower;
-            move.accuracy = nihil.accuracy;
-            move.type = "Dragon";
-            move.category = "Special";
-
-            this.add(
-              "-message",
-              `${attacker.name}'s Core Enforcer transformed into Nihil Light!`
-            );
-          }
-        }
+  onModifyMove(move, source, target) {
+    if (source.species.name === 'Zygarde-MegaC' && move.id === 'coreenforcer') {
+      const nihilLight = this.dex.moves.get('nihillight');
+      if (nihilLight?.exists) {
+        move.name = nihilLight.name;
+        move.basePower = nihilLight.basePower;
+        move.category = nihilLight.category;
+        move.type = nihilLight.type;
+        move.flags = nihilLight.flags;
+        move.secondary = nihilLight.secondary;
+        move.zMove = nihilLight.zMove;
+        move.onHit = nihilLight.onHit;
+        move.onAfterSubDamage = nihilLight.onAfterSubDamage;
+        move.contestType = nihilLight.contestType;
       }
     }
   },
@@ -57,7 +37,6 @@
     if (target.newlySwitched || this.queue.willMove(target)) return;
     target.addVolatile("gastroacid");
   },
-
   secondary: null,
   target: "allAdjacentFoes",
   type: "Dragon",
