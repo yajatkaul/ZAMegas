@@ -17,7 +17,7 @@
       "aspects": ["cosmetic_item-bundle", "mega"],
       "layers": [
         {
-          "texture": "cobblemon:textures/pokemon/0149_dragonite/dragonite_mailbag.png"
+          "texture": "cobblemon:textures/pokemon/0149_dragonite/dragonite_mailbag_mega.png"
         }
       ]
     }
