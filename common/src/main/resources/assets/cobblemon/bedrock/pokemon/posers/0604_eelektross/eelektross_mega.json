@@ -4,7 +4,13 @@
   "profileScale": 0.5,
   "profileTranslation": [-0.2, 0.9, 0.0],
   "rootBone": "eelektross_mega",
-  "animations": {},
+  "animations": {
+    "cry": "q.bedrock_stateful('eelektross_mega', 'cry')",
+    "recoil": "q.bedrock_stateful('eelektross_mega', 'recoil')",
+    "physical": "q.bedrock_stateful('eelektross_mega', 'physical')",
+    "special": "q.bedrock_stateful('eelektross_mega', 'physical')",
+    "status": "q.bedrock_stateful('eelektross_mega', 'physical')"
+  },
   "poses": {
     "standing": {
       "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],

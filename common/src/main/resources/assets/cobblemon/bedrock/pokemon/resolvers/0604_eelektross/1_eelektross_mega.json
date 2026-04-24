@@ -7,14 +7,26 @@
       "poser": "cobblemon:eelektross_mega",
       "model": "cobblemon:eelektross_mega.geo",
       "texture": "cobblemon:textures/pokemon/0604_eelektross/eelektross_mega.png",
-      "layers": []
+      "layers": [
+        {
+          "name": "glow",
+          "texture": "cobblemon:textures/pokemon/0604_eelektross/eelektross_mega_emissive.png",
+          "emissive": true
+        }
+      ]
     },
     {
       "aspects": ["mega", "shiny"],
       "poser": "cobblemon:eelektross_mega",
       "model": "cobblemon:eelektross_mega.geo",
       "texture": "cobblemon:textures/pokemon/0604_eelektross/eelektross_mega_shiny.png",
-      "layers": []
+      "layers": [
+        {
+          "name": "glow",
+          "texture": "cobblemon:textures/pokemon/0604_eelektross/eelektross_mega_emissive.png",
+          "emissive": true
+        }
+      ]
     }
   ]
 }
