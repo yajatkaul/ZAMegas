@@ -31,7 +31,7 @@
     "architectury": ">=13.0.8",
     "fabric-api": "*",
     "cobblemon": ">=1.7",
-    "mega_showdown": ">=1.6.2+1.7+1.21.1",
+    "mega_showdown": ">=1.9.0+1.7.3+1.21.1",
     "accessories": ">=1.1.0-beta.52+1.21.1"
   }
 }
