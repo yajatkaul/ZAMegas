@@ -27,8 +27,8 @@ public final class ZamegaFabric implements ModInitializer {
         convert("hawluchanite", "hawluchanite");
         convert("meganiumite", "meganiumite");
         convert("meowsticite", "meowsticite");
-        convert("raichunite_x", "raichunite_x");
-        convert("raichunite_y", "raichunite_y");
+        convert("raichunitex", "raichunite_x");
+        convert("raichunitey", "raichunite_y");
         convert("scovillainite", "scovillainite");
         convert("skarmorite", "skarmorite");
         convert("starminite", "starminite");

@@ -1,3 +1,2 @@
-# 1.7.4 Release
-- Ported megas to MSD
-- Fixed es_es lang
+# 1.7.4 Release Hotfix Hotfix
+- Fixed raichunite port issue

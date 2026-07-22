@@ -19,7 +19,7 @@
       "aspects": ["mega", "shiny","tatsugiri-texture-curly"],
       "texture": "cobblemon:textures/pokemon/0978_tatsugiri/tatsugiri_mega_shiny.png",
       "layers": [
-                {
+        {
           "name": "glow",
           "texture": "cobblemon:textures/pokemon/0978_tatsugiri/tatsugiri_mega_shiny_emissive.png",
           "emissive": true
@@ -49,7 +49,8 @@
           "emissive": true
         }
       ]
-    },{
+    },
+    {
       "aspects": ["mega","tatsugiri-texture-droopy"],
       "poser": "cobblemon:tatsugiri_droopy_mega",
       "model": "cobblemon:tatsugiri_droopy_mega.geo",
