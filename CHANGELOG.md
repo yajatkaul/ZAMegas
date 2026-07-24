@@ -1,2 +1,2 @@
-# 1.7.4 Release Hotfix Hotfix
-- Fixed raichunite port issue
+# 1.7.5 Release
+- Fixed chesnaughtite, chimechite and chandelurite porting to MSD

@@ -18,9 +18,6 @@ public class ZamegaItems {
 
     public static RegistrySupplier<Item> ABSOLITEZ = registerMegaStone("absolitez");
     public static RegistrySupplier<Item> BAXCALIBRITE = registerMegaStone("baxcalibrite");
-    public static RegistrySupplier<Item> CHANDELURITE = registerMegaStone("chandelurite");
-    public static RegistrySupplier<Item> CHESNAUGHTITE = registerMegaStone("chesnaughtite");
-    public static RegistrySupplier<Item> CHIMECHITE = registerMegaStone("chimechite");
     public static RegistrySupplier<Item> DARKRANITE = registerMegaStone("darkranite");
     public static RegistrySupplier<Item> GARCHOMPITEZ = registerMegaStone("garchompitez");
     public static RegistrySupplier<Item> GOLISOPITE = registerMegaStone("golisopite");

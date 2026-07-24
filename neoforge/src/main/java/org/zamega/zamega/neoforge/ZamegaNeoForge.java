@@ -42,6 +42,9 @@ public final class ZamegaNeoForge {
         convert("barbaracite", "barbaracite");
         convert("dragalgite", "dragalgite");
         convert("falinksite", "falinksite");
+        convert("chesnaughtite", "chesnaughtite");
+        convert("chimechite ", "chimechite ");
+        convert("chandelurite ", "chandelurite ");
     }
 
     private static void convert(String oldId, String newId) {
