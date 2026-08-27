@@ -3,6 +3,10 @@
   "cobblemon.ability.megasol.desc": "이 특성을 가진 포켓몬이 기술을 사용할 때, 날씨가 「쾌청」 상태와 동일한 효과를 받습니다.",
   "cobblemon.ability.dragonize": "드래곤스킨",
   "cobblemon.ability.dragonize.desc": "노말타입 기술을 드래곤타입으로 사용할 수 있을 뿐만 아니라, 기술의 위력이 1.2배가 됩니다.",
+  "cobblemon.ability.piercingdrill": "관통드릴",
+  "cobblemon.ability.piercingdrill.desc": "접촉 기술을 사용할 때 상대의 방어 효과를 무시하고 본래 데미지의 1/4만큼 데미지를 준다. 상대의 방어 효과 이외에는 발동된다.",
+  "cobblemon.ability.spicyspray": "하바네로분출",
+  "cobblemon.ability.spicyspray.desc": "기술로 데미지를 입으면 상대를 화상 상태로 만든다.",
   "cobblemon.move.nihillight": "니힐레이저",
   "cobblemon.move.nihillight.desc": "온갖 법칙을 무시하는 강한 빛을 발사한다. 페어리타입 포켓몬에게도 맞으며 상대의 능력 변화에 상관없이 데미지를 준다.",
   "cobblemon.species.barbaracle-mega.desc": "수많은 팔을 사용해서 상대를 농락한다. 이때, 머리인 거북손데스는 매우 바쁘다.",
@@ -156,8 +160,8 @@
   "tooltip.zamega.chandelurite.tooltip": "샹델라에게 지니게 하면 배틀할 때 메가진화할 수 있는 신비한 메가스톤의 일종.",
   "item.zamega.chesnaughtite": "브리가론나이트",
   "tooltip.zamega.chesnaughtite.tooltip": "브리가론에게 지니게 하면 배틀할 때 메가진화할 수 있는 신비한 메가스톤의 일종.",
-  "item.zamega.chimechoite": "치렁나이트",
-  "tooltip.zamega.chimechoite.tooltip": "치렁에게 지니게 하면 배틀할 때 메가진화할 수 있는 신비한 메가스톤의 일종.",
+  "item.zamega.chimechite": "치렁나이트",
+  "tooltip.zamega.chimechite.tooltip": "치렁에게 지니게 하면 배틀할 때 메가진화할 수 있는 신비한 메가스톤의 일종.",
   "item.zamega.clefablite": "픽시나이트",
   "tooltip.zamega.clefablite.tooltip": "픽시에게 지니게 하면 배틀할 때 메가진화할 수 있는 신비한 메가스톤의 일종.",
   "item.zamega.crabominite": "모단단게나이트",
@@ -239,5 +243,5 @@
   "item.zamega.ange": "앙주",
   "tooltip.zamega.ange.tooltip": "불길한 에너지가 담긴 수정이다.",
   "creativeTab.zamegas.tab": "ZA 메가",
-  "cobblemon.battle.activate.retreat": "%1$s(은)는 도망쳤다!"
+  "cobblemon.battle.activate.retreat": "%1$s(은)는 도망쳤다!",
 }
