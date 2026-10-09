@@ -14,10 +14,9 @@
         ]
     },
     onStart(pokemon) {
-        pokemon.canUltraBurst = null;
-        if (pokemon.canPrimal) pokemon.canPrimal = null;
-        if (pokemon.canZMove) pokemon.canZMove = null;
-        if (pokemon.canDynamax) pokemon.canDynamax = false;
+        if (pokemon.baseSpecies.baseSpecies === "Zygarde") {
+            pokemon.species.cannotDynamax = true;
+        }
         if (pokemon.canTerastallize) pokemon.canTerastallize = false;
     },
     num: 2584,
