@@ -1,4 +1,4 @@
-{
+({
     name: "Zygardite",
     spritenum: 568,
     megaStone: {
@@ -8,14 +8,18 @@
     onTakeItem(item, source) {
         return !item.megaStone?.[source.baseSpecies.baseSpecies];
     },
+    megaSwap: {
+        'Zygarde-Mega': [
+            ['coreenforcer', 'nihillight']
+        ]
+    },
     onStart(pokemon) {
-        pokemon.canUltraBurst = null;
-        if (pokemon.canPrimal) pokemon.canPrimal = null;
-        if (pokemon.canZMove) pokemon.canZMove = null;
-        if (pokemon.canDynamax) pokemon.canDynamax = false;
+        if (pokemon.baseSpecies.baseSpecies === "Zygarde") {
+            pokemon.species.cannotDynamax = true;
+        }
         if (pokemon.canTerastallize) pokemon.canTerastallize = false;
     },
     num: 2584,
     gen: 9,
-    isNonstandard: "Future",
-}
+    isNonstandard: "Future"
+})
